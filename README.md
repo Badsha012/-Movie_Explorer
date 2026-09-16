@@ -1,6 +1,6 @@
 # Cinemora — Movie Explorer
 
-A responsive React movie-discovery application powered by the public [TVMaze API](https://www.tvmaze.com/api).
+A responsive React + Tailwind CSS movie-discovery application powered by the public [TVMaze API](https://www.tvmaze.com/api).
 
 ## Features
 
@@ -13,6 +13,7 @@ A responsive React movie-discovery application powered by the public [TVMaze API
 - Details modal with artwork, summary, rating, release date, runtime, genres, network, and official link
 - Modal closes through the close control, backdrop click, or `Escape`
 - Mobile-first responsive layout
+- Tailwind CSS v4 configured through the Vite plugin
 
 ## Run locally
 

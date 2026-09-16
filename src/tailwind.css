@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --color-ink: #0a1020;
+  --color-paper: #f4f0e8;
+  --color-coral: #ef6845;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper font-body text-slate-900 antialiased; }
+  button { @apply cursor-pointer; }
+}

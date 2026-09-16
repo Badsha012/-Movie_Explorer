@@ -1,0 +1,28 @@
+/* Editorial finish: visual depth, rhythm and premium streaming-app details */
+html { scroll-behavior: smooth; }
+body { text-rendering: optimizeLegibility; }
+.hero { min-height: 710px; background-image: linear-gradient(90deg,rgba(5,9,20,.98) 0%,rgba(7,11,22,.86) 39%,rgba(7,11,22,.27) 78%), url('https://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg'); }
+.hero .top-nav { position: relative; z-index: 3; }
+.hero-content { position: relative; z-index: 2; }
+.hero-content::after { content: 'EDITOR’S PICK\A\A ★ 8.9  ·  DRAMA'; white-space: pre-wrap; position: absolute; left: min(760px, 58vw); top: 57px; width: 190px; min-height: 255px; padding: 186px 18px 18px; border: 1px solid rgba(255,255,255,.38); background: linear-gradient(0deg,rgba(5,9,20,.94),rgba(5,9,20,.02) 75%),url('https://static.tvmaze.com/uploads/images/medium_portrait/0/2400.jpg') center/cover; box-shadow: 18px 18px 0 rgba(239,104,69,.78),0 22px 55px rgba(0,0,0,.45); color:#fff; font:10px/1.5 'DM Mono'; letter-spacing:1px; transform:rotate(4deg); }
+.hero-content::before { content: 'WATCH  ·  DISCOVER  ·  REPEAT'; position:absolute; left:min(975px,78vw); top:55px; width:205px; transform:rotate(90deg); transform-origin:left top; color:rgba(255,255,255,.5); font:9px 'DM Mono'; letter-spacing:3px; white-space:nowrap; }
+.hero h1 { text-shadow: 0 7px 25px rgba(0,0,0,.23); }
+.hero-credit { padding-top:14px; border-top:1px solid rgba(255,255,255,.16); }
+.home-intro { position:relative; overflow:hidden; }
+.home-intro::after { content:'01'; position:absolute; right:5vw; bottom:-54px; color:rgba(21,23,32,.045); font:600 240px/.8 'Playfair Display'; pointer-events:none; }
+.home-intro>* { position:relative; z-index:1; }
+.benefits { position:relative; }
+.benefits::before { content:'WHY CINEMORA'; position:absolute; right:clamp(24px,7vw,104px); top:22px; font:9px 'DM Mono'; color:#7c756e; letter-spacing:1.3px; }
+.movie-grid { align-items:stretch; }
+.movie-card { border:1px solid rgba(21,23,32,.045); }
+.card-copy h3 { letter-spacing:-.3px; }
+.poster-wrap img { filter:saturate(.92) contrast(1.04); }
+.movie-card:hover .poster-wrap img { filter:saturate(1.1) contrast(1.06); }
+.search-wrap { padding-top:7px; }
+.toolbar { position:relative; }
+.toolbar::after { content:''; position:absolute; left:0; bottom:-1px; width:74px; height:2px; background:var(--accent); }
+.modal { box-shadow:0 35px 100px rgba(0,0,0,.55); }
+.modal-image::after { content:''; display:block; position:absolute; inset:0; pointer-events:none; background:linear-gradient(90deg,transparent,rgba(0,0,0,.08)); }
+.modal-image { position:relative; }
+@media(max-width:900px){.hero-content::after{left:auto;right:40px;top:58px;transform:rotate(3deg) scale(.85);transform-origin:top right}.hero-content::before{display:none}}
+@media(max-width:620px){.hero{min-height:620px}.hero-content::after{display:none}.hero-content{padding-top:112px}.home-intro::after{font-size:165px;bottom:-37px}.benefits::before{display:none}}
