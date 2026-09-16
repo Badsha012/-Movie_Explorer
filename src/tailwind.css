@@ -11,6 +11,20 @@
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-paper font-body text-slate-900 antialiased; }
+  body { @apply bg-[#0a1020] font-body text-slate-900 antialiased; }
   button { @apply cursor-pointer; }
+}
+
+@layer components {
+  /* The Discover catalogue intentionally continues the hero's dark cinematic world. */
+  main {
+    @apply !bg-[#0a1020] text-white;
+    background-image: radial-gradient(circle at 92% 3%, rgba(239, 104, 69, .20), transparent 22%), linear-gradient(180deg, #101a31 0%, #0a1020 34%, #080d19 100%) !important;
+  }
+  main .text-slate-500 { @apply text-slate-400; }
+  main .text-slate-600 { @apply text-slate-300; }
+  main .border-stone-400, main .border-stone-300 { @apply border-white/20; }
+  main input { @apply text-white placeholder:text-slate-500; }
+  main select { @apply text-white; }
+  main select option { @apply bg-ink text-white; }
 }
