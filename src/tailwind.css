@@ -11,8 +11,13 @@
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-[#0a1020] font-body text-slate-900 antialiased; }
+  body {
+    @apply bg-[#0a1020] font-body text-slate-900 antialiased;
+    background-image: radial-gradient(circle at top, rgba(239, 104, 69, 0.12), transparent 24%), radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.08), transparent 30%), #0a1020;
+  }
+  #root { min-height: 100vh; }
   button { @apply cursor-pointer; }
+  ::selection { background: rgba(239, 104, 69, 0.8); color: white; }
 }
 
 @layer components {
@@ -27,4 +32,7 @@
   main input { @apply text-white placeholder:text-slate-500; }
   main select { @apply text-white; }
   main select option { @apply bg-ink text-white; }
+  .soft-panel {
+    @apply rounded-[1.5rem] border border-white/10 bg-white/5 backdrop-blur-sm;
+  }
 }
